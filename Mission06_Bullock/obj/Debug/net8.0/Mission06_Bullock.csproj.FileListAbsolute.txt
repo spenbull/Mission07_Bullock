@@ -156,3 +156,4 @@
 /Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/obj/Debug/net8.0/Mission06_Bullock.pdb
 /Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/obj/Debug/net8.0/Mission06_Bullock.genruntimeconfig.cache
 /Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/obj/Debug/net8.0/ref/Mission06_Bullock.dll
+/Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/obj/Debug/net8.0/Mission06_Bullock.sourcelink.json

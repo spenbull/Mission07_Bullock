@@ -34,12 +34,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/Views/Home/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/Views/Home/MeetJoel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NZWV0Sm9lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/Views/Home/MovieList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Nb3ZpZUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/spencerbullock/RiderProjects/Mission06_Bullock/Mission06_Bullock/Views/Shared/_ValidationScriptsPartial.cshtml]

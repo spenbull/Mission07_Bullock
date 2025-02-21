@@ -2,15 +2,26 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1>Welcome to Joel Hilton's Film Collection!</h1>
+<div class="container mt-5">
+    <!-- Main Title with Bootstrap class for emphasis -->
+    <h1 class="text-center text-primary">Welcome to Joel Hilton's Film Collection!</h1>
 
-<div>
-    <p>I love movies and love to track them as well! Join me on my journey!</p>
-    <img src="~/img/JoelHiltonHeadshot.jpg" alt="JoelHilton" height="400">
-</div>
+    <div class="text-center mt-4">
+        <!-- Short Introduction with centered text -->
+        <p class="lead">I love movies and love to track them as well! Join me on my journey!</p>
+        <!-- Headshot image with responsive class for different screen sizes -->
+        <img src="~/img/JoelHiltonHeadshot.jpg" alt="JoelHilton" class="img-fluid" height="400">
+    </div>
 
-<br>
+    <br>
 
-<div>
-    <a asp-controller="Home" asp-action="AddMovie">Add a movie to the Database</a>
+    <!-- Add Movie Link styled as a button -->
+    <div class="text-center mt-4">
+        <a asp-controller="Home" asp-action="AddMovie" class="btn btn-primary">Add a movie to the Database</a>
+    </div>
+
+    <div class="text-center mt-3">
+        <!-- View Movie List Link styled as a button -->
+        <a asp-controller="Home" asp-action="MovieList" class="btn btn-secondary">View Movie List</a>
+    </div>
 </div>

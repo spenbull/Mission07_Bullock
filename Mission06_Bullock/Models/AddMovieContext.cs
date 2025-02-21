@@ -8,5 +8,7 @@ public class AddMovieContext : DbContext
         
     }
     
-    public DbSet<Application> Applications { get; set; }
+    public DbSet<Application> Movies { get; set; }
+    
+    public DbSet<Category> Category { get; set; }
 }

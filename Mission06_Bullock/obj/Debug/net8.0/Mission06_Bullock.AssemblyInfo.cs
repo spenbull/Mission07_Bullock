@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission06_Bullock")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cef1a467af0f61718314c3de6246af28fa231d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission06_Bullock")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission06_Bullock")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
