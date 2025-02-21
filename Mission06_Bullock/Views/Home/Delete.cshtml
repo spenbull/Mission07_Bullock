@@ -1,0 +1,32 @@
+@model Application
+
+<div class="container mt-4">
+    <!-- Page heading with Bootstrap styling -->
+    <h2 class="text-danger">Confirm Deletion</h2>
+    
+    <p class="lead">Are you sure you want to delete the following movie?</p>
+    
+    <!-- Movie title displayed prominently -->
+    <h3 class="fw-bold text-primary">@Model.Title</h3>
+
+    <hr> <!-- Horizontal line for separation -->
+
+    <!-- Centering the form and buttons -->
+    <form method="post" class="mt-3">
+        <!-- Hidden input to store MovieId -->
+        <input type="hidden" asp-for="MovieId">
+
+        <!-- Button group for Delete and Cancel actions -->
+        <div class="d-flex gap-3">
+            <!-- Delete button: styled as danger (red) with an icon -->
+            <button type="submit" class="btn btn-danger">
+                <i class="bi bi-trash"></i> Delete
+            </button>
+
+            <!-- Cancel button: styled as info (blue) to return to movie list -->
+            <a class="btn btn-secondary" asp-controller="Home" asp-action="MovieList">
+                <i class="bi bi-arrow-left"></i> Cancel
+            </a>
+        </div>
+    </form>
+</div>

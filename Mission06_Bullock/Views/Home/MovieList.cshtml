@@ -1,0 +1,62 @@
+@model List<Application>
+
+<!-- Makes the table scrollable on smaller screens -->
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered align-middle">
+        <!-- Table header with a dark background for contrast -->
+        <thead class="table-dark">
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Category</th>
+                <th>Director</th>
+                <th>Rating</th>
+                <th>Edited</th>
+                <th>Lent To</th>
+                <th>Copied to Plex?</th>
+                <th>Notes</th>
+                <th>Actions</th> <!-- Merged Edit/Delete columns into one -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var x in Model)
+            {
+                <tr>
+                    <td>@x.Title</td>
+                    <td>@x.Year</td>
+                    
+                    <!-- Ensure Category is not null before accessing CategoryName -->
+                    <td>@x.Category?.CategoryName</td>
+                    
+                    <td>@x.Director</td>
+                    <td>@x.Rating</td>
+                    
+                    <!-- Convert Boolean values to more user-friendly text -->
+                    <td>@(x.Edited ? "Yes" : "No")</td>
+                    <td>@x.LentTo</td>
+                    <td>@(x.CopiedToPlex ? "Yes" : "No")</td>
+                    <td>@x.Notes</td>
+
+                    <!-- Action buttons for Edit and Delete -->
+                    <td>
+                        <!-- Edit button with Bootstrap primary color and an icon -->
+                        <a class="btn btn-sm btn-primary" 
+                           asp-controller="Home" 
+                           asp-action="Edit" 
+                           asp-route-id="@x.MovieId">
+                            <i class="bi bi-pencil-square"></i> Edit
+                        </a>
+
+                        <!-- Delete button with Bootstrap danger color, an icon, and a confirmation prompt -->
+                        <a class="btn btn-sm btn-danger" 
+                           asp-controller="Home" 
+                           asp-action="Delete" 
+                           asp-route-id="@x.MovieId">
+                            <i class="bi bi-trash"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
